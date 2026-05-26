@@ -122,6 +122,38 @@
       transform:scale(1.05);
     }
         
+    .skill{
+      margin:20px 0;
+      text-align:left;
+    }
+    
+    .progress{
+      width:100%;
+      background:#ddd;
+      border-radius:20px;
+      overflow:hidden;
+    }
+    
+    .progress-bar{
+      height:20px;
+      border-radius:20px;
+    }
+    
+    .html{
+      width:85%;
+      background:orange;
+    }
+    
+    .css{
+      width:75%;
+      background:blue;
+    }
+    
+    .git{
+      width:65%;
+      background:green;
+    }
+
   </style>
 </head>
 
@@ -156,11 +188,25 @@
   <section>
     <h2>Skills</h2>
 
-    <div class="skills">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>Java</span>
-      <span>GitHub</span>
+    <div class="skill">
+      <p>HTML</p>
+      <div class="progress">
+        <div class="progress-bar html"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <p>CSS</p>
+      <div class="progress">
+        <div class="progress-bar css"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <p>Git & GitHub</p>
+      <div class="progress">
+        <div class="progress-bar git"></div>
+     </div>
     </div>
   </section>
 
