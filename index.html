@@ -184,11 +184,26 @@
     button{
       background:blue;
     }
+    .dark-mode{
+      background:#121212;
+      color:white;
+    }
+
+    .dark-mode section{
+      background:#333;
+      color:white;
+    }
+
+    .dark-mode h1,
+    .dark-mode h2{
+      color:white;
+    }
 
   </style>
 </head>
 
 <body>
+  <button onclick="toggleMode()">🌙 Dark Mode</button>
   <nav>
     <a href="#">Skills</a>
     <a href="#">Home</a>
@@ -268,5 +283,12 @@
 <script>
   alert("Welcome to Sufiyan's Portfolio!");
 </script>
+
+<script>
+function toggleMode(){
+  document.body.classList.toggle("dark-mode");
+}
+</script>
+
 </body>
 </html>
