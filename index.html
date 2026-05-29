@@ -215,6 +215,7 @@
   <header>
     <img src="profile.jpg" alt="Profile Photo">
     <h1>Sufiyan Ahmed</h1>
+    <h3 id="clock"></h3>
     <p>Aspiring Software Developer | Open Source Learner</p>
   </header>
 
@@ -280,15 +281,29 @@
   <footer>
     <p>© 2026 Sufiyan Ahmed</p>
   </footer>
-<script>
-  alert("Welcome to Sufiyan's Portfolio!");
-</script>
+  <script>
+    alert("Welcome to Sufiyan's Portfolio!");
+  </script>
 
-<script>
-function toggleMode(){
-  document.body.classList.toggle("dark-mode");
-}
-</script>
+  <script>
+  function toggleMode(){
+    document.body.classList.toggle("dark-mode");
+  }
+  </script>
+  <script>
+  function toggleMode(){
+    document.body.classList.toggle("dark-mode");
+  }
 
+  function updateClock(){
+    let now = new Date();
+
+    let time = now.toLocaleTimeString();
+
+    document.getElementById("clock").innerHTML = time;
+  }
+
+  setInterval(updateClock,1000);
+  </script>
 </body>
 </html>
